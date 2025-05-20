@@ -1,0 +1,18 @@
+ast is TokenStream [Ident { ident: "struct", span: #0 bytes(25563..25569) }, Ident { ident: "Pancakes", span: #0 bytes(25570..25578) }, Punct { ch: ';', spacing: Alone, span: #0 bytes(25578..25579) }]
+name is Pancakes
+gen into is impl HelloMacro for Pancakes
+{
+    fn hello_macro()
+    { println! ("Hello, Macro! My name is {}!", stringify! (Pancakes)) ; }
+}
+attr is TokenStream [Ident { ident: "GET", span: #0 bytes(25589..25592) }, Punct { ch: ',', spacing: Alone, span: #0 bytes(25592..25593) }, Literal { kind: Str, symbol: "/", suffix: None, span: #0 bytes(25594..25597) }]
+func is TokenStream [Ident { ident: "pub", span: #0 bytes(25600..25603) }, Ident { ident: "fn", span: #0 bytes(25604..25606) }, Ident { ident: "index", span: #0 bytes(25607..25612) }, Group { delimiter: Parenthesis, stream: TokenStream [Ident { ident: "input", span: #0 bytes(25613..25618) }, Punct { ch: ':', spacing: Alone, span: #0 bytes(25618..25619) }, Ident { ident: "String", span: #0 bytes(25620..25626) }], span: #0 bytes(25612..25627) }, Punct { ch: '-', spacing: Joint, span: #0 bytes(25628..25629) }, Punct { ch: '>', spacing: Alone, span: #0 bytes(25629..25630) }, Ident { ident: "String", span: #0 bytes(25631..25637) }, Group { delimiter: Brace, stream: TokenStream [Ident { ident: "input", span: #0 bytes(25644..25649) }], span: #0 bytes(25638..25651) }]
+token is Ident { ident: "GET", span: #0 bytes(25589..25592) }
+method is GET
+token is Punct { ch: ',', spacing: Alone, span: #0 bytes(25592..25593) }
+others is ,
+token is Literal { kind: Str, symbol: "/", suffix: None, span: #0 bytes(25594..25597) }
+path is "/"
+parsing error occurs
+vector is [1, 2, 3]
+Hello, Macro! My name is Pancakes!
