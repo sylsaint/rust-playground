@@ -6,7 +6,7 @@ name = "rust-playground"
 version = "0.1.0"
 edition = "2021"
 description = "a playground for learning rust"
-repository = "git@git.woa.com:yonglusun/rust-playground.git"
+repository = "git@github.com:sylsaint/rust-playground.git"
 license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
